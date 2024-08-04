@@ -14,6 +14,7 @@ import { clearCredentials } from './features/authSlice';
 import { ToastContainer, toast } from 'react-toastify';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+import NotFound from './components/NotFound';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/todos" element={token ? <TodoList /> : <LoginPage />} />
         <Route path="/sessions" element={token ? <SessionList/> : <LoginPage />} />
+        <Route path="*" element={<NotFound/>} />
       </Routes>
       <ModalConfirm
         show={showModal}
