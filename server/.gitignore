@@ -1,0 +1,33 @@
+# Node modules directory
+/node_modules
+
+# Environment variables file
+.env
+
+# Log files
+*.log
+
+# Directory for compiled output
+/dist
+
+# Dependency directory
+/package-lock.json
+/yarn.lock
+
+# IDE or editor-specific files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build output
+/build
+
+# npm-debug files
+npm-debug.log*
+
+# Miscellaneous
+*.swp
+*.swo

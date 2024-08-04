@@ -1,0 +1,64 @@
+.table-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.user-details strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.user-details div {
+  margin-bottom: 0.5rem;
+}
+
+.session-token {
+  max-width: 200px;
+  word-break: break-word;
+}
+
+.table-primary {
+  background-color: #f8f9fa;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+  padding: 0.75rem; 
+  border: 1px solid #dee2e6; 
+}
+
+.table thead th {
+  text-align: center; 
+}
+
+.table tbody td {
+  text-align: left; 
+}
+
+.table td {
+  max-width: 250px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}

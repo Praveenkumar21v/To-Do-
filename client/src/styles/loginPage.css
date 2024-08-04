@@ -1,0 +1,60 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .form {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .input {
+    margin-bottom: 1rem;
+  }
+  
+  .button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .linkContainer {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .linkText {
+    font-size: 0.9rem;
+  }
+  
+  .registerLink {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .registerLink:hover {
+    text-decoration: underline;
+  }
+  
+  .alert {
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .form {
+      padding: 1.5rem;
+    }
+  }
+  

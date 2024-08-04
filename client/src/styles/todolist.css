@@ -1,0 +1,99 @@
+.todo-list-container {
+  padding: 20px;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#signout {
+  margin-top: 20px;
+}
+
+.todo-cards-container {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr); 
+  margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+  .todo-cards-container {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .todo-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) and (min-width: 426px) {
+  .todo-cards-container {
+    grid-template-columns: 1fr; 
+  }
+}
+
+@media (max-width: 425px) {
+  .todo-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.todo-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color 0.3s, transform 0.3s;
+  background-color: #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  min-height: 200px; 
+  display: flex;
+  flex-direction: column; 
+}
+
+.todo-card.completed {
+  background-color: lightgreen;
+}
+
+.todo-card:hover {
+  background-color: lightblue;
+  transform: scale(1.02);
+}
+
+.todo-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px;
+  flex: 1; 
+}
+
+.todo-card .card-footer {
+  background-color: #f8f9fa;
+  padding: 10px; 
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; 
+}
+
+.todo-card .card-footer .edit-button,
+.todo-card .card-footer .delete-button {
+  flex: 1; 
+  max-width: 120px; 
+}
+
+.todo-card .card-footer .edit-button {
+  margin-right: 10px; 
+}
+
+.todo-card .card-footer .delete-button {
+  margin-left: 10px; 
+}
+
+.todo-card {
+  height: 100%;
+}
