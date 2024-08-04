@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/sessions';
+const API_URL = 'https://to-do-fullstack.onrender.com/api/sessions';
 
 export const fetchSessions = createAsyncThunk(
   'sessions/fetchSessions',
