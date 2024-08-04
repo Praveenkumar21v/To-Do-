@@ -13,7 +13,7 @@ const app = express();
 const allowedOrigins = [
   'http://localhost:3000',
   'https://todofullstack13.netlify.app',
-  'https://to-do-alpha-eosin.vercel.app/abc' 
+  'https://to-do-alpha-eosin.vercel.app' 
 ];
 
 const corsOptions = {
